@@ -1,1 +1,62 @@
 @use "/src/sass/base/variables.scss" as *;
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url('/src/img/Rectangle_26.jpg');
+    width: 100%;
+    min-height: 100vh;
+
+    &__logo {
+        display: block;
+        padding-top: 30px;
+    }
+
+    &__text {
+        padding-top: 43px;
+        font-size: 14px;
+
+        ul {
+            display: flex;
+            padding: 0;
+            list-style: none;
+            white-space: nowrap;
+            gap: 40px;
+            min-height: 20px;
+            width: 742px;
+
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }
+
+    &__icons {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        padding-top: 35px;
+        width: 92px;
+        min-height: 20px;
+
+        a {
+            display: block;
+            color: $white;
+
+            span {
+                display: block;
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 312px;
+    padding-right: 312px;
+}
